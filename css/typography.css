@@ -28,16 +28,6 @@ p {
 button {
   cursor: pointer;
   text-transform: capitalize;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: var(--semibold-weight);
-  background-image: linear-gradient(
-    270deg,
-    rgba(255, 113, 59, 1) 0%,
-    rgba(255, 165, 29, 1) 100%
-  );
-  color: #fff;
-  font-family: inherit;
   border: none;
 }
 

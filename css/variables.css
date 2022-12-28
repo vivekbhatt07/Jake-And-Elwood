@@ -1,19 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary-color: #fff;
-  --secondary-color: #f18119;
-  --tertiary-color: #404040;
-  --para-txt-color: #5a5a5a;
-  --footer-txt-color: #989898;
-  --input-border-color: #818181;
-  --input-placeholder-color: #40404080;
-  --input-border-radius: 7px;
-  --source-sans-pro: "Source Sans Pro", sans-serif;
-  --extra-light-weight: 200;
+  --logo-bg-color: #ffe600;
+  --logo-text-color: #000000;
+  --btn-color: #ffe600;
+  --nav-link-color: #fff;
+  --para-color: #fff;
+  --card-para-color: #404040;
+  --head-color: #000000;
+  --primary-font: "Montserrat", sans-serif;
   --light-weight: 300;
   --regular-weight: 400;
+  --medium-weight: 500;
   --semibold-weight: 600;
   --bold-weight: 700;
-  --bolder-weight: 900;
+  --extrabold-weight: 800;
+  --black-weight: 900;
 }
