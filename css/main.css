@@ -4,6 +4,7 @@
 
 body {
   font-family: var(--primary-font);
+  width: 100vw;
 }
 
 .wrapper {
@@ -22,7 +23,6 @@ span {
 
 .container {
   width: 90%;
-  max-width: 900px;
 }
 
 /* HEADER */
@@ -30,8 +30,13 @@ span {
 .header {
   display: flex;
   position: absolute;
-  height: 22vw;
-  padding: 0 1em;
+  height: 5em;
+  width: 100vw;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
 }
 
 /* NAV */
@@ -54,6 +59,7 @@ span {
   font-size: 31px;
   line-height: 37px;
   color: var(--logo-text-color);
+  padding: 0 8px;
 }
 
 .nav-logo-link strong {
@@ -72,7 +78,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1em;
 }
 
 .hero-section {
@@ -82,8 +88,8 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 40% bottom 45%;
-  padding-top: 40vw;
   padding-bottom: 5.5em;
+  padding-top: 9em;
 }
 
 .hero-head,
@@ -94,6 +100,7 @@ span {
 
 .hero-head {
   line-height: 125%;
+  text-transform: capitalize;
 }
 
 .hero-description {
@@ -104,7 +111,90 @@ span {
 
 .contact-btn {
   font-family: inherit;
-  padding: 1em 1.5em;
+  padding: 0.8em 1.8em;
   font-weight: var(--extrabold-weight);
   background-color: var(--btn-color);
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.contact-btn:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 560px) {
+  .hero-head,
+  .hero-description {
+    max-width: 310px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-head,
+  .hero-description {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-head,
+  .hero-description {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-container {
+    gap: 3em;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+  }
+
+  .nav-item-link,
+  .nav-item-active {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .nav-item-link {
+    font-weight: var(--medium-weight);
+    color: var(--nav-link-color);
+  }
+
+  .nav-item-active {
+    font-weight: var(--bold-weight);
+    color: #ffe600;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #ffe600;
+  }
+
+  .nav-item a:hover {
+    color: #ffe600;
+  }
+
+  .hero-head,
+  .hero-description {
+    max-width: 650px;
+  }
+
+  .hero-section {
+    background-size: cover;
+    padding-top: 14em;
+    padding-bottom: 8em;
+    height: 100vh;
+  }
+
+  .hero-container {
+    gap: 2em;
+  }
 }
