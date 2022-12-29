@@ -15,6 +15,7 @@ h1,
 h2,
 h3 {
   color: var(--head-color);
+  text-transform: capitalize;
 }
 
 span {
@@ -196,5 +197,64 @@ span {
 
   .hero-container {
     gap: 2em;
+  }
+}
+
+/* GRID */
+
+.info-section {
+  display: flex;
+  justify-content: center;
+}
+
+.info-container {
+  padding: 2em 0;
+  display: grid;
+  grid-template: 1fr 1fr / minmax(200px, 300px);
+  gap: 2em;
+  justify-content: center;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.info-card-description {
+  text-align: center;
+}
+
+@media (min-width: 560px) {
+  .info-container {
+    grid-template: 1fr 1fr / minmax(200px, 450px);
+  }
+}
+
+@media (min-width: 685px) {
+  .info-container {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  .skill-card {
+    grid-column: 1 / -1;
+    align-self: center;
+  }
+}
+
+@media (min-width: 780px) {
+  .info-container {
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+
+  .skill-card {
+    grid-column: 3 / -1;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .info-container {
   }
 }
