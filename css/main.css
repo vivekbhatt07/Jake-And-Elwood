@@ -4,7 +4,6 @@
 
 body {
   font-family: var(--primary-font);
-  width: 100vw;
 }
 
 .wrapper {
@@ -32,7 +31,7 @@ span {
   display: flex;
   position: absolute;
   height: 5em;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
 }
 
@@ -305,4 +304,47 @@ span {
 .footer-subtitle,
 .footer-copyright {
   color: #fff;
+}
+
+@media (min-width: 685px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-list {
+    flex-direction: column;
+  }
+
+  .footer-subtitle {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 780px) {
+  .social-list {
+    flex-direction: row;
+  }
+
+  .footer-content,
+  .footer-head {
+    align-items: flex-start;
+  }
+
+  .footer-subtitle {
+    max-width: 450px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-subtitle {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-subtitle {
+    max-width: 700px;
+  }
 }
