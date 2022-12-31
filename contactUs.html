@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jake And Elwood</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -22,13 +22,13 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-item-active" href="./index.html">home</a>
+                <a class="nav-item-link" href="./index.html">home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-item-link" href="./aboutUs.html">about us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item-link" href="./contactUs.html">contact</a>
+                <a class="nav-item-active" href="./contactUs.html">contact</a>
               </li>
             </ul>
           </nav>
@@ -39,47 +39,41 @@
 
       <main class="main">
         <div class="main-container">
-          <section class="hero-section">
-            <div class="container hero-container">
-              <h2 class="hero-head">
-                The only marketing agency on <span>a mission from God</span>,
-                fully dedicated to increase your web traffic.
-              </h2>
-              <p class="hero-description">
-                We’re two brothers from Chicago that are trying to pay back our
-                debt. We can help you with
-                <strong>SEO, SEM, content marketing </strong>and whatever else.
-              </p>
-              <button class="contact-btn">contact us</button>
-            </div>
-          </section>
-          <section class="info-section">
-            <div class="container info-container">
-              <article class="info-card">
-                <h3 class="info-card-title">about us</h3>
-                <p class="info-card-description">
-                  We grew up in downtown Chicago, and we used to play in a band.
-                  <strong>Jake loves fried chicken</strong>, and
-                  <strong>Elwood loves dry white toast</strong>.
+          <section class="page-section">
+            <div class="container page-container">
+              <div class="page-head">
+                <h2 class="page-title">contact us</h2>
+                <p class="page-subtitle">
+                  Let us know how we can help you need and we’ll drive over to
+                  your place in our Bluesmobile the following day to discuss the
+                  deal.
                 </p>
-              </article>
-              <article class="info-card">
-                <h3 class="info-card-title">get in touch</h3>
-                <p class="info-card-description">
-                  Send us an email with some info about what help you need and
-                  <strong>we’ll drive over to your place </strong>in our
-                  Bluesmobile the following day to discuss the deal.
-                </p>
-              </article>
-              <article class="info-card skill-card">
-                <h3 class="info-card-title">Our skills</h3>
-                <p class="info-card-description">
-                  Elwood is an expert in
-                  <strong>SEO, SEM, and driving from the police.</strong>
-                  Jake is our <strong>social media specialist</strong>, and he
-                  has an amazing voice.
-                </p>
-              </article>
+              </div>
+              <div class="page-body">
+                <div class="page-img-wrap">
+                  <img
+                    src="./assets/img/contact.jpg"
+                    alt="letter box over wood"
+                  />
+                </div>
+                <form class="page-form">
+                  <div class="page-input">
+                    <label for="first-name">first name</label>
+                    <input id="first-name" />
+                  </div>
+                  <div class="page-input">
+                    <label for="email">email</label>
+                    <input id="email" />
+                  </div>
+                  <div class="page-input">
+                    <label for="message">message</label>
+                    <textarea id="message"></textarea>
+                  </div>
+                  <div>
+                    <button class="btn">send</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </section>
         </div>
