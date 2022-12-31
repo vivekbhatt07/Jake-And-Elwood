@@ -454,6 +454,10 @@ span {
     max-width: 600px;
   }
 
+  .page-img-text {
+    max-width: 600px;
+  }
+
   .page-article {
     display: flex;
     flex-direction: column;
@@ -463,6 +467,14 @@ span {
   .page-article-description {
     text-align: center;
     max-width: 600px;
+  }
+
+  .page-img-text {
+    align-items: center;
+  }
+
+  .page-img-text p {
+    text-align: center;
   }
 }
 
@@ -474,9 +486,17 @@ span {
   .page-article-description {
     max-width: 650px;
   }
+
+  .page-img-text {
+    max-width: 650px;
+  }
 }
 
 @media (min-width: 780px) {
+  .page-img-text {
+    max-width: none;
+  }
+
   .page-container {
     gap: 5em;
   }
@@ -512,5 +532,13 @@ span {
   .message-input,
   .form-btn-wrapper {
     grid-column: 1 / -1;
+  }
+
+  .page-img-text {
+    align-items: flex-start;
+  }
+
+  .page-img-text p {
+    text-align: left;
   }
 }
